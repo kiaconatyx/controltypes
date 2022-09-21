@@ -91,14 +91,14 @@ fun forEachStandard(){
 fun forEachIndices(){
     val items = listOf("apple", "banana", "kiwi")
     for (index in items.indices){
-        println("Item at " + index + " is: " + items[index])
+        println("Item at $index is: $items[index]")
     }
 }
 
 fun forEachWithIndex(){
     val items = listOf("apple", "banana", "kiwi")
     for ((index, value) in items.withIndex()){
-        println("The item at $index" + " is:  $value")
+        println("The item at $index + is:  $value")
     }
 }
 
@@ -114,7 +114,7 @@ fun whileWithList(){
 fun doWhileExample(){
     var index = 0
     do {
-        println("Do While Index is: " + index)
+        println("Do While Index is: $index")
         index++
     } while (index < 5)
 }
